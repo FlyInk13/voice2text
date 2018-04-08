@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    background: #4D7FB2;
+    border: 0px;
+    outline: 0px;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 3px;
+}
+
+#help, #apikey {
+    border: 1px solid #4D7FB2;
+    padding: 12px;
+    border-radius: 2px;
+    width: 100%;
+    outline: 0px;
+    text-align: center;
+}
+
+html, body {
+    margin: 0px;
+    background: #fff;
+    color: #222;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    padding: 16px;
+    width: 340px
+}
+
+a {
+    color: #4F80AE;
+}
+
+[type="checkbox"] {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+
+[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+[type="checkbox"]:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+[type="checkbox"]:not(checked) + label {
+    position: relative;
+    padding: 0 50px 0 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+[type="checkbox"]:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    width: 35px;
+    height: 12px;
+    border-radius: 13px;
+    background: #CDD1DA;
+}
+
+[type="checkbox"]:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 13px;
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: all .2s;
+}
+
+[type="checkbox"]:checked + label:before {
+    background: #CDE0EE;
+}
+
+[type="checkbox"]:checked + label:after {
+    right: 0px;
+    background: #4D7FB2;
+}
+
+[type="checkbox"], label {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+[disabled], [disabled] + label {
+    opacity: 0.5
+}

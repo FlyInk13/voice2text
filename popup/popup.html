@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <input type="checkbox" id="off"/><label for="off">Отключить</label>
+        <br>
+        <input type="checkbox" id="hide_errors"/><label for="hide_errors">Компактные ошибки</label>
+        <br>
+        <input type="checkbox" id="show_counter"/><label for="show_counter">Счетчик</label>
+        <br>
+        <input type="checkbox" id="only_active"/><label for="only_active">Только на активных вкладках</label>
+        <br>
+        <input type="checkbox" id="disableAntimat"/><label for="disableAntimat">Включить мат</label>
+        <br>
+        <div id="help">
+            Если SpeechKit Cloud ApiKey закончился, то просто <a href="https://developer.tech.yandex.ru/keys/" target="_blank">получите новый тут</a>.
+        </div>
+        <input id="apikey" style="display: none;margin-top:6px;" placeholder="Вставьте ключ сюда или оставьте поле пустым"/>
+        <button id="edit_key">Заменить SpeechKit Cloud ApiKey</button>
+        <br><br>
+        <center id="log">
+            Сделал <a href="https://flyink.ru/" target="_blank">Гена</a>,
+            распознает <a href="https://tech.yandex.ru/speechkit/cloud/" target="_blank">Яндекс SpeechKit</a>.
+            <a href="https://github.com/FlyInk13/voice2text" target="_blank">Посмотреть на GitHub</a>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>
